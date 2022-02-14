@@ -1,0 +1,16 @@
+<h1 class="header">Stupid Coaching</h1>
+
+
+<div>
+  <%= link_to ask_path do%>
+    <div class="question-form">
+      <p class="question">
+        <%= params[:question] %>
+      </p>
+      <p class="answer">
+        <%= @answer %>
+      </p>
+    </div>
+  <% end %>
+  <%= link_to "Ask a new question", ask_path, class:"ask-button"%>
+</div>
